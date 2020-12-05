@@ -7,6 +7,6 @@
 
 import Foundation
 
-class MovieResponseModel: Codable {
+public class MovieResponseModel: Codable {
     var title: String?
 }

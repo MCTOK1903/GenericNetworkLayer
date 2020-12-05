@@ -13,6 +13,8 @@ class ServiceMenager {
     public static let shared: ServiceMenager = ServiceMenager()
 }
 
+// Mark: - Service
+
 extension ServiceMenager {
     
     func sendRequest<T:Codable>(request: RequestModel, completion: @escaping(Swift.Result<T,ErrorModel>) -> Void) {

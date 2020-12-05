@@ -7,20 +7,21 @@
 
 import Foundation
 
-class ErrorModel: Error {
+public class ErrorModel: Error {
     
-    // MARK: - Properties
+    // MARK: Properties
     var messageKey: String
     var message: String {
         return messageKey.localized()
     }
     
+    // Mark: init
     init(_ messageKey: String) {
         self.messageKey = messageKey
     }
 }
 
-// MARK: - Public Functions
+// MARK: - Public func
 extension ErrorModel {
     
     class func generalError() -> ErrorModel {

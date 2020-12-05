@@ -14,7 +14,8 @@ enum RequestHTTPMethod: String {
 
 class RequestModel: NSObject, Codable {
     
-    // MARK: - Properties
+    // MARK: Properties
+    
     var path: String {
         return ""
     }
@@ -32,12 +33,14 @@ class RequestModel: NSObject, Codable {
     }
     
     // (request, response)
+    
     var isLoggingEnabled: (Bool, Bool) {
         return (true, true)
     }
 }
 
-// MARK: - Public Functions
+// MARK: - public func
+
 extension RequestModel {
     
     func urlRequest() -> URLRequest {

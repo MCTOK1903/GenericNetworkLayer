@@ -24,6 +24,10 @@
 		EBB2258B257C108A00F60B08 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2258A257C108A00F60B08 /* Service.swift */; };
 		EBB2258F257C111200F60B08 /* MovieRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2258E257C111200F60B08 /* MovieRequestModel.swift */; };
 		EBB22594257C11A800F60B08 /* MovieResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB22593257C11A800F60B08 /* MovieResponseModel.swift */; };
+		EBB22598257C298B00F60B08 /* HomeControllerViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB22597257C298B00F60B08 /* HomeControllerViewModelType.swift */; };
+		EBB225A0257C2ABF00F60B08 /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2259F257C2ABF00F60B08 /* HomeControllerViewModel.swift */; };
+		EBB225A3257C324D00F60B08 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB225A2257C324D00F60B08 /* AppContainer.swift */; };
+		EBB225A6257C334A00F60B08 /* HomeControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB225A5257C334A00F60B08 /* HomeControllerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		EBB2258A257C108A00F60B08 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EBB2258E257C111200F60B08 /* MovieRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequestModel.swift; sourceTree = "<group>"; };
 		EBB22593257C11A800F60B08 /* MovieResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseModel.swift; sourceTree = "<group>"; };
+		EBB22597257C298B00F60B08 /* HomeControllerViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModelType.swift; sourceTree = "<group>"; };
+		EBB2259F257C2ABF00F60B08 /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
+		EBB225A2257C324D00F60B08 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		EBB225A5257C334A00F60B08 /* HomeControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 				EBB22548257B9C8300F60B08 /* Info.plist */,
 				EBB2253A257B9C8200F60B08 /* AppDelegate.swift */,
 				EBB2253C257B9C8200F60B08 /* SceneDelegate.swift */,
+				EBB225A2257C324D00F60B08 /* AppContainer.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -166,8 +175,8 @@
 		EBB2255C257B9DC400F60B08 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				EBB22575257BA23000F60B08 /* Extension */,
 				EBB22569257B9FE800F60B08 /* Constants */,
+				EBB22575257BA23000F60B08 /* Extension */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -176,6 +185,9 @@
 			isa = PBXGroup;
 			children = (
 				EBB2255F257B9DF300F60B08 /* HomeViewController.swift */,
+				EBB22597257C298B00F60B08 /* HomeControllerViewModelType.swift */,
+				EBB2259F257C2ABF00F60B08 /* HomeControllerViewModel.swift */,
+				EBB225A5257C334A00F60B08 /* HomeControllerBuilder.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,8 +195,8 @@
 		EBB22563257B9E4300F60B08 /* ServicesModels */ = {
 			isa = PBXGroup;
 			children = (
-				EBB22565257B9E5800F60B08 /* RequestModel.swift */,
 				EBB22572257BA1C900F60B08 /* ErrorModel.swift */,
+				EBB22565257B9E5800F60B08 /* RequestModel.swift */,
 				EBB2257C257BC6B800F60B08 /* ResponseModel.swift */,
 			);
 			path = ServicesModels;
@@ -193,9 +205,9 @@
 		EBB22569257B9FE800F60B08 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				EBB2256E257BA00E00F60B08 /* NetworkConstants */,
 				EBB2256A257B9FF700F60B08 /* Constant.swift */,
 				EBB22579257BA41800F60B08 /* ErrorKey.swift */,
+				EBB2256E257BA00E00F60B08 /* NetworkConstants */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -339,6 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB22577257BA24200F60B08 /* String+Extension.swift in Sources */,
+				EBB225A0257C2ABF00F60B08 /* HomeControllerViewModel.swift in Sources */,
+				EBB225A3257C324D00F60B08 /* AppContainer.swift in Sources */,
 				EBB22594257C11A800F60B08 /* MovieResponseModel.swift in Sources */,
 				EBB2257A257BA41800F60B08 /* ErrorKey.swift in Sources */,
 				EBB22573257BA1C900F60B08 /* ErrorModel.swift in Sources */,
@@ -348,8 +362,10 @@
 				EBB2253D257B9C8200F60B08 /* SceneDelegate.swift in Sources */,
 				EBB2256B257B9FF700F60B08 /* Constant.swift in Sources */,
 				EBB22588257C0D8E00F60B08 /* ServiceMenager.swift in Sources */,
+				EBB225A6257C334A00F60B08 /* HomeControllerBuilder.swift in Sources */,
 				EBB22560257B9DF300F60B08 /* HomeViewController.swift in Sources */,
 				EBB2257D257BC6B800F60B08 /* ResponseModel.swift in Sources */,
+				EBB22598257C298B00F60B08 /* HomeControllerViewModelType.swift in Sources */,
 				EBB2258F257C111200F60B08 /* MovieRequestModel.swift in Sources */,
 				EBB22566257B9E5800F60B08 /* RequestModel.swift in Sources */,
 			);

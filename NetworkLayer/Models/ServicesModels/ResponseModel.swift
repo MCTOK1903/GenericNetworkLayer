@@ -9,6 +9,8 @@ import Foundation
 
 struct ResponseModel<T: Codable>: Codable {
     
+    //Mark: Properties
+    
     var statusMessage: String?
     var statusCode: Int?
     var results: T?
@@ -20,6 +22,8 @@ struct ResponseModel<T: Codable>: Codable {
     
     var request: RequestModel?
     
+    //Mark: Init
+    
     public init(from decoder: Decoder) throws {
         let keyedContainer = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -29,6 +33,7 @@ struct ResponseModel<T: Codable>: Codable {
     }
 }
 
+//Mark: Extension
 extension ResponseModel {
     private enum  CodingKeys: String, CodingKey {
         case results

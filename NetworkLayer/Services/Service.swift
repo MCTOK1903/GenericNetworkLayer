@@ -7,8 +7,16 @@
 
 import Foundation
 
-class Service {
-    class func movie(completion: @escaping(Swift.Result<[MovieResponseModel], ErrorModel>) -> Void) {
+public protocol ServiceProtocol {
+    func movie(completion: @escaping(Swift.Result<[MovieResponseModel], ErrorModel>) -> Void)
+}
+
+public class Service: ServiceProtocol {
+    ///Fetch Movie
+    
+    public init() {}
+    
+    public func movie(completion: @escaping(Swift.Result<[MovieResponseModel], ErrorModel>) -> Void) {
         ServiceMenager.shared.sendRequest(request: MovieRequestModel()) { (result) in
             completion(result)
         }
